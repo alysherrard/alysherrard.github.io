@@ -50,6 +50,7 @@ p{
 a{
 	position: relative;
 	color: white;
+	font-weight: bold;
 	text-decoration: none;
 	&::before {
     background-color: white;
@@ -60,18 +61,25 @@ a{
     left: 50%;
     transform: translateX(-50%);
     transition: width 0.3s ease-in-out;
-    width: 100%;
+    width: 0;
   }
 	&:hover {
     &::before {
-       width: 0;
+       width: 100%;
     }
   }
 }
 
 .material-icons{
 	vertical-align: middle;
-	font-size: 1.25em !important;
+	font-size: 1.25em;
+	&.icon-sm{
+		font-size: .75em;
+	}
+	&.icon-link{
+		transform: rotate(-45deg);
+    vertical-align: text-top;
+	}
 }
 
 @media (min-width: 600px){

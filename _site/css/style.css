@@ -27,6 +27,8 @@ table {
 .header {
   height: 6em;
   padding: 1em;
+  max-width: 900px;
+  margin: auto;
 }
 
 .header a.logo-link {
@@ -154,7 +156,7 @@ table {
   margin-bottom: 3em;
   position: relative;
   border-radius: 2em;
-  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.1), -8px -8px 16px 0 rgba(255, 255, 255, 0.9);
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.1), -8px -8px 16px 0 rgba(255, 255, 255, 0.8);
   color: #FFF;
   text-decoration: none;
 }
@@ -206,6 +208,8 @@ table {
 }
 
 .work-intro {
+  max-width: 1000px;
+  margin: auto;
   padding: 2em;
 }
 
@@ -370,6 +374,7 @@ p {
 a {
   position: relative;
   color: white;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -382,16 +387,25 @@ a::before {
   left: 50%;
   transform: translateX(-50%);
   transition: width 0.3s ease-in-out;
-  width: 100%;
+  width: 0;
 }
 
 a:hover::before {
-  width: 0;
+  width: 100%;
 }
 
 .material-icons {
   vertical-align: middle;
-  font-size: 1.25em !important;
+  font-size: 1.25em;
+}
+
+.material-icons.icon-sm {
+  font-size: .75em;
+}
+
+.material-icons.icon-link {
+  transform: rotate(-45deg);
+  vertical-align: text-top;
 }
 
 @media (min-width: 600px) {

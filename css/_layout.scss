@@ -4,6 +4,8 @@
 .header{
 	height: 6em;
 	padding: 1em;
+	max-width: 900px;
+	margin: auto;
 	a.logo-link{
 		text-decoration: none;
 		&::before {
@@ -126,7 +128,7 @@
 		margin-bottom: 3em;
 		position: relative;
 		border-radius: 2em;
-		box-shadow: 8px 8px 16px 0 rgba($color-dark, .1), -8px -8px 16px 0 rgba($color-white, .9);
+		box-shadow: 8px 8px 16px 0 rgba($color-dark, .1), -8px -8px 16px 0 rgba($color-white, .8);
 		color: $color-white;
 		text-decoration: none;
 		&::before {
@@ -177,6 +179,8 @@
 //work styles
 
 .work-intro{
+	max-width: 1000px;
+  margin: auto;
 	padding: 2em;
 }
 .content-work .shape-container{
@@ -189,6 +193,8 @@
     margin: 4em auto;
 	}
 }
+
+
 
 //about styles
 
