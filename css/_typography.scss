@@ -82,6 +82,31 @@ a{
 	}
 }
 
+.btn {
+	padding: 1em 2em;
+	color: darken($color-purple, 10%);
+	background: $color-gray-light;
+	background: linear-gradient(to bottom right, rgba($color-dark, .05), $color-gray-light, rgba($color-white, .6));
+	background: -webkit-linear-gradient(to bottom right, rgba($color-dark, .05), $color-gray-light, rgba($color-white, .6));
+	border-radius: 2em;
+	box-shadow: 8px 8px 16px 0 rgba($color-dark, .1), -8px -8px 16px 0 rgba($color-white, .8);
+	transition: all .5s ease;
+	&::before{
+		display: none; //hide link underline
+	}
+	&:hover, &:focus{
+		color: $color-white;
+		background: rgba($color-purple, .9);
+		background: -webkit-linear-gradient(to top right, rgba($color-pink, .925), rgba($color-purple, .925), rgba($color-blue, .925));
+		background: linear-gradient(to top right, rgba($color-pink, .925), rgba($color-purple, .925), rgba($color-blue, .925));
+	}
+	&.btn-prev, &.btn-next{
+		display: inline-block;
+		margin: 1em;
+		text-align:center;
+	}
+}
+
 @media (min-width: 600px){
 	h1{
 		font-size: 3.25em;
@@ -104,5 +129,10 @@ a{
 
 	p{
 		font-size: 1.25em;
+	}
+	.btn{
+		&.btn-prev, &.btn-next{
+			margin: 1em 3em;
+		}
 	}
 }

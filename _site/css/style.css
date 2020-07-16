@@ -226,6 +226,13 @@ table {
   margin: 4em auto;
 }
 
+.container-prev-next {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2em 0;
+  text-align: center;
+}
+
 @media (min-width: 375px) {
   .home-grid-wrapper h2.intro-name {
     font-size: 9em;
@@ -408,6 +415,34 @@ a:hover::before {
   vertical-align: text-top;
 }
 
+.btn {
+  padding: 1em 2em;
+  color: #994ede;
+  background: #eaeaea;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.05), #eaeaea, rgba(255, 255, 255, 0.6));
+  background: -webkit-linear-gradient(to bottom right, rgba(0, 0, 0, 0.05), #eaeaea, rgba(255, 255, 255, 0.6));
+  border-radius: 2em;
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.1), -8px -8px 16px 0 rgba(255, 255, 255, 0.8);
+  transition: all .5s ease;
+}
+
+.btn::before {
+  display: none;
+}
+
+.btn:hover, .btn:focus {
+  color: #FFF;
+  background: rgba(178, 121, 230, 0.9);
+  background: -webkit-linear-gradient(to top right, rgba(228, 95, 230, 0.925), rgba(178, 121, 230, 0.925), rgba(151, 149, 241, 0.925));
+  background: linear-gradient(to top right, rgba(228, 95, 230, 0.925), rgba(178, 121, 230, 0.925), rgba(151, 149, 241, 0.925));
+}
+
+.btn.btn-prev, .btn.btn-next {
+  display: inline-block;
+  margin: 1em;
+  text-align: center;
+}
+
 @media (min-width: 600px) {
   h1 {
     font-size: 3.25em;
@@ -429,6 +464,9 @@ a:hover::before {
   }
   p {
     font-size: 1.25em;
+  }
+  .btn.btn-prev, .btn.btn-next {
+    margin: 1em 3em;
   }
 }
 
