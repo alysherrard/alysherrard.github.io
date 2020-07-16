@@ -43,6 +43,14 @@ table {
   height: 100%;
 }
 
+.header ul.social {
+  list-style: none;
+}
+
+.header ul.social li {
+  display: inline-block;
+}
+
 .container {
   overflow: hidden;
 }
