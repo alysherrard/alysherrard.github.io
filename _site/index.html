@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alyson Sherrard Portfolio</title>
+
+  <!--<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">-->
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playball&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header class="header">
+	<a href="/" class="logo-link">
+  	<img src="/assets/images/aly-sherrard-logo.png" alt="Alyson Sherrard Logo" class="header-logo" />
+	</a>
+</header>
+
+
+  <div id="content">
+    <div class="container">
+	<div class="home-grid-wrapper">
+		<h1>Alyson Sherrard Web Design Portfolio</h1>
+		<h2 class="intro animate__animated animate__fadeInDown">Hi, my name is</h2>
+		<h2 class="intro-name animate__animated animate__fadeInLeft">aly</h2>
+
+		<p class="animate__animated animate__fadeIn animate__delay-1s">
+			I'm a UX designer and frontend developer living in Cincinnati.
+			I think code is just as beautiful as design. I like glitter more than a normal person.
+			Currently researching and writing about being a UX Unicorn. Always looking to learn something new.
+		</p>
+
+		<b class="line-1 animate__animated animate__fadeInDown"></b>
+		<b class="shape-1 animate__animated animate__zoomIn"></b>
+		<b class="shape-2 animate__animated animate__zoomIn"></b>
+	</div>
+
+	<div class="shape-container">
+		<div class="work-grid-wrapper">
+		  
+		  
+				<a class="card-work" href="/abc-digital/">
+			    <img src="/assets/images/abc-digital.jpg" alt="Answers Bible Curriculum Digital" />
+					<div class="work-info">
+						<div class="text-container">
+							<h3>Answers Bible Curriculum Digital</h3>
+							<p>Online Sunday school platform</p>
+						</div>
+					</div>
+				</a>
+		  
+				<a class="card-work" href="/abcd-landing-page/">
+			    <img src="/assets/images/abcd-landing-page.jpg" alt="ABC Digital Marketing" />
+					<div class="work-info">
+						<div class="text-container">
+							<h3>ABC Digital Marketing</h3>
+							<p>A landing page promoting ABC Digital</p>
+						</div>
+					</div>
+				</a>
+		  
+				<a class="card-work" href="/ark-404/">
+			    <img src="/assets/images/ark-404.jpg" alt="Ark Encounter 404 Page" />
+					<div class="work-info">
+						<div class="text-container">
+							<h3>Ark Encounter 404 Page</h3>
+							<p>A fun SVG Animation</p>
+						</div>
+					</div>
+				</a>
+		  
+				<a class="card-work" href="/tschichold-quote/">
+			    <img src="/assets/images/tschichold-quote.jpg" alt="CSS Grid Jan Tschichold Quote" />
+					<div class="work-info">
+						<div class="text-container">
+							<h3>CSS Grid Jan Tschichold Quote</h3>
+							<p>Inspired by Jen Simmons</p>
+						</div>
+					</div>
+				</a>
+		  
+				<a class="card-work" href="/tip-calculator/">
+			    <img src="/assets/images/tip-calculator.jpg" alt="Javascript Tip Calculator" />
+					<div class="work-info">
+						<div class="text-container">
+							<h3>Javascript Tip Calculator</h3>
+							<p>It all started with the DailyUI challenge...</p>
+						</div>
+					</div>
+				</a>
+		  
+				<a class="card-work" href="/payment-concept/">
+			    <img src="/assets/images/payment-system-concept.jpg" alt="Payment System UX Concept" />
+					<div class="work-info">
+						<div class="text-container">
+							<h3>Payment System UX Concept</h3>
+							<p>A series created for the DailyUI challenge</p>
+						</div>
+					</div>
+				</a>
+		  
+				<a class="card-work" href="/ark-shirt/">
+			    <img src="/assets/images/ark-shirt.jpg" alt="Ark Encounter Tee Shirt" />
+					<div class="work-info">
+						<div class="text-container">
+							<h3>Ark Encounter Tee Shirt</h3>
+							<p>Apparel design for the attraction gift shop</p>
+						</div>
+					</div>
+				</a>
+		  
+				<a class="card-work" href="/abc-order-form/">
+			    <img src="/assets/images/abc-order-form-1.jpg" alt="ABC Order Form" />
+					<div class="work-info">
+						<div class="text-container">
+							<h3>ABC Order Form</h3>
+							<p>An updated e-commerce solution</p>
+						</div>
+					</div>
+				</a>
+		  
+		</div>
+	</div>
+</div>
+
+<script>
+$('.card-work').click(function (element) {
+    element.preventDefault();
+    var linkPath = this.getAttribute("href");
+
+    setTimeout(function(){ window.location = linkPath; }, 1500);
+});
+</script>
+
+  </div>
+</body>
+</html>
