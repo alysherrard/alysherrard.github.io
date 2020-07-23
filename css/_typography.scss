@@ -83,13 +83,12 @@ a{
 }
 
 .btn {
+	display: inline-block;
 	padding: 1em 2em;
 	color: darken($color-purple, 10%);
-	background: $color-gray-light;
-	background: linear-gradient(to bottom right, rgba($color-dark, .05), $color-gray-light, rgba($color-white, .6));
-	background: -webkit-linear-gradient(to bottom right, rgba($color-dark, .05), $color-gray-light, rgba($color-white, .6));
+	background: $color-white;
 	border-radius: 2em;
-	box-shadow: 8px 8px 16px 0 rgba($color-dark, .1), -8px -8px 16px 0 rgba($color-white, .8);
+	box-shadow: 8px 8px 16px 0 rgba($color-dark, .075), -8px -8px 16px 0 rgba($color-white, .6);
 	transition: all .5s ease;
 	&::before{
 		display: none; //hide link underline
